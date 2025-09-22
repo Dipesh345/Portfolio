@@ -1,0 +1,230 @@
+.about {
+  padding: 80px 0;
+  margin-left: 300px; /* shift whole section */
+}
+
+.about h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  position: relative;
+  text-align: center;
+}
+
+.about h2::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 3px;
+  background: #0d6efd;
+  margin: 8px auto 0;
+}
+
+.about-intro {
+  font-size: 1.1rem;
+  color: #666;
+  max-width: 800px;
+  margin: 0 auto 40px;
+  text-align: center;
+}
+
+.about-content {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  gap: 20px; /* reduced gap between image & text */
+}
+
+.about-img {
+  flex: 0 0 auto;
+  margin-right: 15px; /* control spacing */
+}
+
+.about-img img {
+  display: block;
+  width: 260px;
+  height: 360px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.about-info {
+  flex: 2 1 500px;
+}
+
+.about-info h3 {
+  font-weight: 700;
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+}
+
+.about-info .fst-italic {
+  font-style: italic;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+.about-details {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  margin-bottom: 20px;
+}
+
+.about-details ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.about-details li {
+  margin-bottom: 12px;
+  font-size: 0.95rem;
+  display: flex;
+  align-items: center;
+}
+
+.about-details strong {
+  color: #000;
+  margin-right: 6px;
+}
+
+/* Blue Arrow */
+.about-details .arrow {
+  color: #0d6efd;
+  margin-right: 6px;
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+
+.about-info p {
+  color: #666;
+  line-height: 1.6;
+}
+
+@media (max-width: 1200px) {
+  .about {
+    margin-left: 200px;
+  }
+}
+
+@media (max-width: 991px) {
+  .about {
+    margin-left: 100px;
+  }
+  .about-content {
+    flex-direction: column;
+    text-align: center;
+  }
+  .about-info {
+    text-align: left;
+  }
+  .about-details {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .about {
+    margin-left: 0; /* remove margin for small devices */
+    padding: 60px 20px;
+  }
+  .about-intro {
+    font-size: 1rem;
+  }
+  .about-info h3 {
+    font-size: 1.3rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .about {
+    padding: 40px 15px;
+  }
+  .about-intro {
+    font-size: 0.95rem;
+  }
+  .about-info h3 {
+    font-size: 1.2rem;
+  }
+  .about-details {
+    gap: 20px;
+  }
+}
+
+/* ================= SKILLS SECTION ================= */
+.skills {
+  margin-top: 60px;
+  text-align: center; /* center content */
+}
+
+.skills h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  position: relative;
+  text-align: center;
+}
+
+.skills h2::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 3px;
+  background: #0d6efd;
+  margin: 8px auto 0; /* underline centered */
+}
+
+/* ✅ same style as about-intro */
+.skills-intro {
+  font-size: 1.1rem;
+  color: #666;
+  max-width: 800px;
+  margin: 0 auto 40px;
+  text-align: center;
+}
+
+/* Two-column layout */
+.skills-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 25px 40px; /* row gap, column gap */
+}
+
+.skill {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.skill span {
+  font-weight: 600;
+  min-width: 90px;
+}
+
+.progress {
+  flex: 1;
+  height: 10px;
+  background: #e9ecef;
+  border-radius: 6px;
+  overflow: hidden;
+  position: relative;
+}
+
+.progress-bar {
+  height: 100%;
+  background: #0d6efd;
+  border-radius: 6px;
+  transition: width 1s ease-in-out;
+}
+
+.percent {
+  min-width: 50px;
+  text-align: right;
+  font-weight: bold;
+}
+
+/* Responsive */
+@media (max-width: 991px) {
+  .skills-content {
+    grid-template-columns: 1fr; /* stack for tablets & below */
+  }
+}
