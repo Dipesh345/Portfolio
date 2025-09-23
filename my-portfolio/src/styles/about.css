@@ -1,6 +1,6 @@
 .about {
   padding: 80px 0;
-  margin-left: 300px; /* shift whole section */
+  margin-left: 300px; /* shift whole section on large screen */
 }
 
 .about h2 {
@@ -36,7 +36,7 @@
 
 .about-img {
   flex: 0 0 auto;
-  margin-right: 15px; /* control spacing */
+  margin-right: 15px; /* spacing between image and text */
 }
 
 .about-img img {
@@ -63,10 +63,11 @@
   margin-bottom: 20px;
 }
 
+/* =================== DETAILS =================== */
 .about-details {
   display: flex;
   flex-wrap: wrap;
-  gap: 40px;
+  gap: 60px; /* space between two detail columns */
   margin-bottom: 20px;
 }
 
@@ -77,10 +78,11 @@
 }
 
 .about-details li {
-  margin-bottom: 12px;
-  font-size: 0.95rem;
+  margin-bottom: 14px;
+  font-size: 1rem;
   display: flex;
   align-items: center;
+  line-height: 1.6;
 }
 
 .about-details strong {
@@ -91,8 +93,8 @@
 /* Blue Arrow */
 .about-details .arrow {
   color: #0d6efd;
-  margin-right: 6px;
-  font-size: 1.1rem;
+  margin-right: 8px;
+  font-size: 1rem;
   font-weight: bold;
 }
 
@@ -101,6 +103,7 @@
   line-height: 1.6;
 }
 
+/* ================= RESPONSIVE ================= */
 @media (max-width: 1200px) {
   .about {
     margin-left: 200px;
@@ -133,6 +136,11 @@
   }
   .about-info h3 {
     font-size: 1.3rem;
+  }
+  .about-details {
+    flex-direction: column; /* stack columns */
+    gap: 20px;
+    text-align: left;
   }
 }
 

@@ -106,7 +106,7 @@ export default function About() {
               <div className="progress">
                 <div className="progress-bar" style={{ width: "70%" }}></div>
               </div>
-              <span className="percent">70%</span>
+              <span className="percent">70%</span> 
             </div>
             <div className="skill">
               <span>React</span>
