@@ -42,10 +42,10 @@ export default function Sidebar() {
 
           {/* Social Icons */}
           <div className="social-icons">
-            <a href="#"><FaFacebookF /></a>
-            <a href="#"><FaInstagram /></a>
-            <a href="#"><FaLinkedinIn /></a>
-            <a href="#"><FaGithub /></a>
+            <a href="https://www.facebook.com/dipesh.thapa.96343"><FaFacebookF /></a>
+            <a href="https://www.instagram.com/smoky0_0/"><FaInstagram /></a>
+            <a href="https://www.linkedin.com/in/dipesh-thapa-magar-a41520305/"><FaLinkedinIn /></a>
+            <a href="https://github.com/Dipesh345"><FaGithub /></a>
           </div>
         </div>
 
@@ -56,7 +56,6 @@ export default function Sidebar() {
             <li><a href="#about" onClick={handleLinkClick}><FaUser /> About</a></li>
             <li><a href="#resume" onClick={handleLinkClick}><FaFileAlt /> Resume</a></li>
             <li><a href="#portfolio" onClick={handleLinkClick}><FaBriefcase /> Portfolio</a></li>
-            <li><a href="#services" onClick={handleLinkClick}><FaList /> Services</a></li>
             <li><a href="#contact" onClick={handleLinkClick}><FaEnvelope /> Contact</a></li>
           </ul>
         </nav>

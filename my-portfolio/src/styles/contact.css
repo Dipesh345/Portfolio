@@ -14,7 +14,7 @@
   padding: 40px 30px;
   border-radius: 16px;
   box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
-  max-width: 600px;
+  max-width: 900px;
   width: 100%;
   text-align: center;
   animation: fadeIn 0.6s ease-in-out;
@@ -34,7 +34,50 @@
   line-height: 1.5;
 }
 
+/* ✅ Two Column Layout */
+.contact-content {
+  display: flex;
+  gap: 40px;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-top: 20px;
+  text-align: left;
+}
+
+/* Left Info */
+.contact-info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.info-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 1rem;
+  color: #333;
+}
+
+.info-item a {
+  text-decoration: none;
+  color: #0d6efd;
+  transition: color 0.3s;
+}
+
+.info-item a:hover {
+  color: #084298;
+}
+
+.info-icon {
+  color: #0d6efd;
+  font-size: 1.1rem;
+}
+
+/* Right Form */
 .contact-form {
+  flex: 1;
   display: flex;
   flex-direction: column;
   gap: 18px;
@@ -112,7 +155,7 @@
 /* ✅ Responsive Design */
 @media (max-width: 991px) {
   .contact {
-    margin-left: 0; /* remove 300px gap on smaller screens */
+    margin-left: 0;
     padding: 40px 15px;
   }
 
@@ -122,6 +165,11 @@
 
   .contact-title {
     font-size: 1.6rem;
+  }
+
+  .contact-content {
+    flex-direction: column;
+    gap: 25px;
   }
 }
 
